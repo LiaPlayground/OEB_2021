@@ -2,7 +2,7 @@
 
 author:   André Dietrich
 email:    LiaScript@web.de
-version:  0.0.1
+version:  1.0.0
 language: en
 narrator: US English Male
 
