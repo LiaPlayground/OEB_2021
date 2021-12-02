@@ -12,13 +12,13 @@ import:   https://raw.githubusercontent.com/liaTemplates/AVR8js/main/README.md
 
 import:   https://github.com/LiaTemplates/Pyodide/blob/0.1.4/README.md
 
-
+comment:  The discovery demo on LiaScript that was presented on the OEB 2021.
 -->
 
+[![LiaScript](https://raw.githubusercontent.com/LiaScript/LiaScript/master/badges/course.svg)](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/OEB_2021/main/README.md)
 
 
 # LiaScript at the OEB 2021
-
 
 > **Shiny New e-Learning Platforms: Great for Business, a Dead-end for Online Education?**
 >
@@ -39,13 +39,7 @@ import:   https://github.com/LiaTemplates/Pyodide/blob/0.1.4/README.md
 
 ## LiaScript, it's not a Platform
 
-### Single-Source of Truth
-
-### Storage & Distribution
-
-### Classrooms?
-
-
+[qr-code](https://liascript.github.io/course/?https://raw.githubusercontent.com/LiaPlayground/OEB_2021/main/README.md)
 
 
 ## Demos
@@ -91,6 +85,28 @@ __That was the correct answer, you can now play Prince of Persion!__
 
 
 
+#### Python
+
+``` python
+import numpy as np
+import matplotlib.pyplot as plt
+
+t = np.arange(0.0, 2.0, 0.01)
+s = np.sin(2 * np.pi * t)
+
+fig, ax = plt.subplots()
+ax.plot(t, s)
+
+ax.grid(True, linestyle='-.')
+ax.tick_params(labelcolor='r', labelsize='medium', width=3)
+
+plt.show()
+
+plot(fig) # <- this is required to plot the fig also on the LiaScript canvas
+```
+@Pyodide.eval
+
+
 
 #### Arduino
 
@@ -126,26 +142,6 @@ void loop() {
 
 
 
-#### Python
-
-``` python
-import numpy as np
-import matplotlib.pyplot as plt
-
-t = np.arange(0.0, 2.0, 0.01)
-s = np.sin(2 * np.pi * t)
-
-fig, ax = plt.subplots()
-ax.plot(t, s)
-
-ax.grid(True, linestyle='-.')
-ax.tick_params(labelcolor='r', labelsize='medium', width=3)
-
-plt.show()
-
-plot(fig) # <- this is required to plot the fig also on the LiaScript canvas
-```
-@Pyodide.eval
 
 
 ### Classrooms
@@ -269,16 +265,49 @@ data-ylabel="% of GDP"
 
 ### Multimedia
 
-__Image !__
+1. **A direct link:**
 
-__Audio ?__
+   `https://LiaScript.github.io`
 
-__Video !?__
+   https://LiaScript.github.io
 
-__Anything else ??__
+2. **A named link:**
 
+   `[LiaScript](https://LiaScript.github.io)`
 
-??[SketchFab human eye model](https://sketchfab.com/3d-models/the-human-eye-extrinsic-muscle-contraction-20-dc9c88630b6c42a8b242fd6024d0697f)
+   [LiaScript](https://LiaScript.github.io)
+
+3. **An internal link:**
+
+   `[about liascript](#about-liascript)`
+
+   [about liascript](#about-liascript)
+
+4. **An image !:**
+
+   `![alt text](https://...url...image.jpg)`
+
+   ![Netherlandish Proverbs](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Pieter_Brueghel_the_Elder_-_The_Dutch_Proverbs_-_Google_Art_Project.jpg/2560px-Pieter_Brueghel_the_Elder_-_The_Dutch_Proverbs_-_Google_Art_Project.jpg "Pieter Brueghel the Elder - The Dutch Proverbs")
+
+5. **Audio ?:**
+
+   `?[alt text](ref to audio)`
+
+   ?[Beethoven 7th](https://soundcloud.com/zikrawahyudi/beethoven-0-bethoven-7th)
+
+6. **Video !?:**
+
+   `!?[alt text](ref to video)`
+
+   !?[LiaScript on YouTube](https://www.youtube.com/watch?v=w_CRABsJNKA)
+
+7. **Anything ??:**
+
+   `??[alt text](https://website...)`
+
+   ??[SketchFab human eye model](https://sketchfab.com/3d-models/the-human-eye-extrinsic-muscle-contraction-20-dc9c88630b6c42a8b242fd6024d0697f)
+
+   ??[a circuit simulation](https://www.falstad.com/circuit/circuitjs.html)
 
 ### Misc
 
